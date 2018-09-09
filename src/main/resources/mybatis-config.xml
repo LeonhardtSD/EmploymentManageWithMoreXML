@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--以下的节点都是有默认顺序的，不按默认顺序排序则报错-->
+    <settings>
+        <!-- 全局懒加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+    <!--<typeAliases>-->
+        <!--<typeAlias type="com.gaozhaoxi.entity.User" alias="myuser"/>-->
+    <!--</typeAliases>-->
+<!--dataSource和transactionManager放在mybatis-spring定义-->
+    <!--<environments default="development">-->
+        <!--<environment id="development">-->
+            <!--<transactionManager type="JDBC"/>-->
+            <!--<dataSource type="POOLED">-->
+                <!--<property name="driver" value="${driver}"/>-->
+                <!--<property name="url" value="${url}"/>-->
+                <!--<property name="username" value="${username}"/>-->
+                <!--<property name="password" value="${password}"/>-->
+            <!--</dataSource>-->
+        <!--</environment>-->
+    <!--</environments>-->
+    <!--mapper定义在<bean  class="org.mybatis.spring.SqlSessionFactoryBean">-->
+    <!--<mappers>-->
+        <!--<mapper resource="userMapper.xml"/>-->
+        <!--<mapper resource="provinceMapper.xml"/>-->
+        <!--<mapper resource="aliasMapper.xml"/>-->
+        <!--<mapper resource="cityMapper.xml"/>-->
+        <!--<mapper resource="riceMapper.xml"/>-->
+        <!--<mapper resource="noodleMapper.xml"/>-->
+    <!--</mappers>-->
+
+</configuration>
